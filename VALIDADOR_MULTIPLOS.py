@@ -1,5 +1,4 @@
-
-
+# Pedir un número entero positivo y validarlo con isdigit()
 while True:
     entrada1 = input("Dame un numero: ")
 
@@ -8,12 +7,10 @@ while True:
         if numero > 0:
             print("Numero 1 valido y mayor que 0")
             break
-        else:
-            print("NUMERO NEGATIVO")
     else:
-        print("Por favor ingrese un numero")
+        print("Por favor ingrese un numero positivo")
 
-
+# Pedir segundo número y validar con try/except
 while True:
 
     entrada2 = input("Dame otro numero: ")
@@ -30,7 +27,7 @@ while True:
     except ValueError:
         print("Por favor ingrese numeros validos")
 
-
+# Verificar si el segundo número es múltiplo del primero
 print(f"{numero} y {numero2} son validos para la operacion")
 
 if numero2 % numero == 0:
